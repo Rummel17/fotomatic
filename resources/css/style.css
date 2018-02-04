@@ -35,7 +35,7 @@ src: url("https://fonts.googleapis.com/css?family=Rubik");
   display: block;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 1024px) {
   .main-content {
     top: 2.5625rem;
   }
@@ -78,6 +78,20 @@ li {
   padding: 0rem 0rem 0rem 1.5rem;
 }
 
+li .button {
+  margin-left: -1.5rem;
+}
+
+.button {
+  display: none;
+  padding: 0.15rem 0.625rem 0.25rem 0.625rem;
+  margin: 0rem 0rem 0.25rem 0rem;
+  background-color: #9dc20b;
+  border-radius: 4px;
+  font-weight: 300;
+  letter-spacing: 0px;
+}
+
 header .icon {
   width: 1rem;
 }
@@ -86,7 +100,16 @@ header .mobile {
   display: none;
 }
 
-@media only screen and (max-width: 760px) {
+@media all and (max-width: 1024px) {
+
+.button {
+    display: block;
+  }
+
+}
+
+
+@media only screen and (max-width: 470px) {
   header .desktop {
     display: none;
   }
